@@ -1,0 +1,97 @@
+body.programs .page-content {
+    padding-bottom: 20px;
+}
+
+.programs-intro {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.program-thumb {
+    display: block;
+    padding: 15px 15px 25px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    color: $color-black;
+    text-align: center;
+    transition: $global-link-transition;
+    transform: scale(1,1);
+
+    &:hover {
+        color: $color-blue;
+        transform: scale(1.05,1.05);
+        box-shadow: 0 0 30px rgba(0,0,0,0.15);
+
+        .program-img {
+            border-bottom-color: $color-blue;
+        }
+    }
+    &:active {
+        transform: scale(0.95,0.95);
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .program-img {
+        display: inline-block;
+        border-bottom: solid 5px $color-green;
+        margin-bottom: 20px;
+        transition: $global-link-transition;
+    }
+    .program-title {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.program-detail {
+    font-size: 16px;
+    line-height: 24px;
+
+    .program-image {
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .program-title {
+        font-size: 36px;
+        line-height: 42px;
+        border: none;
+        color: $color-blue;
+    }
+    .program-video {
+        margin-bottom: 20px;
+
+        iframe {
+            width: 100% !important;
+            height: 420px !important;
+        }
+    }
+    h4 {
+        font-weight: $font-weight-bold;
+        border-bottom: solid 1px $color-gray;
+        padding-bottom: 10px;
+        margin: 30px 0 20px;
+    }
+    .program-responses {
+        .response {
+            background: $color-gray-light;
+            padding: 20px;
+            margin-bottom: 10px;
+
+            .response-meta {
+                margin: 10px 0 0;
+                color: $color-gray-dark;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.comment-form {
+    textarea {
+        min-height: 200px;
+    }
+}

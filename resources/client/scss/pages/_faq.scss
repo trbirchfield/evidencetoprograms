@@ -1,0 +1,135 @@
+.faq-categories {
+    z-index: 10;
+    position: relative;
+    margin-right: -30px;
+    margin-left: 0;
+
+    li {
+        display: block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+            display: block;
+            padding: 15px 15px 7px;
+            font-family: $font-family-sans-serif-condensed;
+            font-size: 30px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: $color-green;
+            border: solid 1px transparent;
+            transition: $global-link-transition;
+
+            &:hover {
+                background-color: $color-green;
+                color: #fff;
+                border: solid 1px $color-green;
+            }
+        }
+        &.active {
+            margin-right: -1px;
+
+            a {
+                background-color: #fff;
+                border: $global-border;
+                border-right-color: transparent;
+                color: $color-blue;
+            }
+        }
+    }
+}
+
+.faq-questions {
+    z-index: 5;
+    position: relative;
+    min-height: 270px;
+
+    .toggle-all {
+        font-size: 14px;
+        margin-top: -25px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+    }
+
+    .accordion {
+        .accordion-navigation {
+            padding-bottom: 10px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+            > a {
+                position: relative;
+                background-color: #fff;
+                border: $global-border;
+                padding: 10px 15px 8px;
+                transition: $global-link-transition;
+
+                h3 {
+                    font-family: $font-family-sans-serif-condensed;
+                    font-size: 30px;
+                    line-height: 34px;
+                    margin-bottom: 0;
+                    text-align: left;
+                    color: $color-green;
+
+                    .fa {
+                        position: absolute;
+                        font-size: 14px;
+                        line-height: 14px;
+                        right: 20px;
+                        top: 50%;
+                        margin-top: -7px;
+                        transform: rotate(0deg);
+                        transition: $global-animation-transition;
+                    }
+                }
+
+                &:hover {
+                    background-color: $color-green;
+                    border-color: $color-green;
+
+                    h3 {
+                        color: #fff;
+                    }
+                }
+            }
+            &.active {
+                > a {
+                    h3 {
+                        color: $color-blue;
+
+                        .fa {
+                            transform: rotate(135deg);
+                        }
+                    }
+                    &:hover {
+                        background-color: $color-blue;
+                        border-color: $color-blue;
+
+                        h3 {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.content {
+    span {
+        li {
+            font-size: 18px;
+            line-height: 35px;
+        }
+    }
+}
+
+.faq-form {
+    textarea {
+        min-height: 200px;
+    }
+}

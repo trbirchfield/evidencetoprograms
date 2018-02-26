@@ -1,0 +1,50 @@
+{
+  "name": "SiteByWhiteLion",
+  "version": "0.0.1",
+  "devDependencies": {
+    "angular": "~1.4.0",
+    "foundation": "~5.5.1",
+    "jquery": "~2.1.3",
+    "lodash": "~3.5.0",
+    "modernizr": "~2.8.3",
+    "fontawesome": "~4.3.0",
+    "bootstrap-sass": "~3.3.4",
+    "google-code-prettify": "~1.0.4",
+    "slick-carousel": "~1.4.1",
+    "angular-messages": "~1.3.14",
+    "bootswatch": "~3.3.4",
+    "angular-loading-bar": "~0.7.1",
+    "angular-ui-sortable": "~0.13.3",
+    "angular-slugify": "~1.0.0",
+    "angular-chosen-localytics": "~1.0.7",
+    "bootstrap-chosen": "~1.0.1",
+    "bootstrap-tagsinput": "~0.4.2",
+    "moment": "~2.9.0",
+    "danialfarid-angular-file-upload": "~4.2.4",
+    "angular-sanitize": "~1.4.0",
+    "ng-ckeditor": "~0.2.1",
+    "jquery-ui": "~1.11.4",
+    "angular-bootstrap": "~0.13.0",
+    "scrollReveal.js": "~2.2.0",
+    "jquery.localScroll": "~1.4.0",
+    "jquery.scrollTo": "~2.1.0",
+    "angular-ui-utils": "bower",
+    "Chart.js": "~1.0.2",
+    "ngInfiniteScroll": "~1.2.1",
+    "angular-mask": "~3.0.12",
+    "photoswipe": "~4.0.8",
+    "fancybox": "~2.1.5",
+    "angularjs-datepicker": "~0.2.5",
+    "jquery-timepicker-jt": "~1.8.1",
+    "bower": "*",
+    "install": "~1.0.4",
+    "angular-jquery-timepicker": "~0.6.0",
+    "chosen": "~1.4.2"
+  },
+  "dependencies": {
+    "angular-local-storage": "~0.1.5"
+  },
+  "resolutions": {
+    "angular": "~1.4.0"
+  }
+}

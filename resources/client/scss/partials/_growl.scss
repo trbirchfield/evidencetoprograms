@@ -1,0 +1,127 @@
+.growls {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 100px;
+    right: 50%;
+    margin-right: -200px;
+    z-index: 10000;
+    width: 100%;
+    max-width: 400px;
+
+    @media screen and (max-width: 899px) {
+        top: 80px;
+    }
+
+    .growl {
+        position: relative;
+        cursor: pointer;
+        background-color: $growl-default-bg;
+        color: $growl-default-text;
+        border-color: $growl-default-border;
+        border-style: solid;
+        border-width: $growl-border-width;
+        padding: 20px 34px 20px 60px;
+        margin-bottom: 5px;
+        width: 100%;
+        border-radius: $growl-border-radius;
+        opacity: $growl-opacity;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+
+        &::before {
+            position: absolute;
+            display: block;
+            top: 25px;
+            left: 20px;
+            font-family: $font-family-icon;
+            font-size: 24px;
+            line-height: 24px;
+        }
+        &:after {
+            content: '\00d7';
+            opacity: $growl-close-opacity;
+            font-size: 16px;
+            line-height: 1;
+            width: 16px;
+            height: 16px;
+            background: $growl-close-bg;
+            text-align: center;
+            border-radius: $growl-border-radius;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+        }
+        &:hover {
+            opacity: $growl-opacity-hover;
+
+            &:after {
+                opacity: $growl-close-opacity-hover;
+            }
+        }
+
+        .growl-title {
+            //@extend %truncate;
+            font-family: $font-family-sans-serif-condensed;
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 2px;
+        }
+        .growl-message,
+        .growl-message ul,
+        .growl-message ol,
+        .growl-message ul li,
+        .growl-message ol li {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+
+        &.primary {
+            background-color: $growl-primary-bg;
+            color: $growl-primary-text;
+            border-color: $growl-primary-border;
+        }
+        &.success {
+            background-color: $growl-success-bg;
+            color: $growl-success-text;
+            border-color: $growl-success-border;
+
+            &::before {
+                content: $fa-var-check;
+                color: darken($growl-success-bg, 10%);
+            }
+        }
+        &.error {
+            background-color: $growl-error-bg;
+            color: $growl-error-text;
+            border-color: $growl-error-border;
+
+            &::before {
+                content: $fa-var-ban;
+                color: darken($growl-error-bg, 10%);
+            }
+        }
+        &.warning {
+            background-color: $growl-warning-bg;
+            color: $growl-warning-text;
+            border-color: $growl-warning-border;
+
+            &::before {
+                content: $fa-var-exclamation-triangle;
+                color: darken($growl-warning-bg, 10%);
+            }
+        }
+        &.info {
+            background-color: $growl-info-bg;
+            color: $growl-info-text;
+            border-color: $growl-info-border;
+
+            &::before {
+                content: $fa-var-info-circle;
+                color: darken($growl-info-bg, 10%);
+            }
+        }
+    }
+}

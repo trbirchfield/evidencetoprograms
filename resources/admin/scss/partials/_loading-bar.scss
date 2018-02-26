@@ -1,0 +1,15 @@
+#loading-bar .bar {
+  background: $loading-bar-color;
+  height: $loading-bar-height;
+  border-bottom-right-radius: $loading-bar-height / 2;
+  border-top-right-radius: $loading-bar-height / 2;
+}
+
+#loading-bar-spinner .spinner-icon {
+  width: $loading-bar-spinner-diameter;
+  height: $loading-bar-spinner-diameter;
+
+  border: solid $loading-bar-spinner-border-width $loading-bar-spinner-border-color;
+  border-top-color: $loading-bar-spinner-color;
+  border-left-color: $loading-bar-spinner-color;
+}

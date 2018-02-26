@@ -1,0 +1,87 @@
+.growls {
+    list-style: none;
+    margin: 100px 0 0 0;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    max-width: 300px;
+
+    .growl {
+        position: relative;
+        cursor: pointer;
+        background-color: $growl-default-bg;
+        color: $growl-default-text;
+        border-color: $growl-default-border;
+        border-style: solid;
+        border-width: $growl-border-width;
+        padding: 10px;
+        padding-right: 24px;
+        margin-bottom: 5px;
+        width: 100%;
+        border-radius: $growl-border-radius;
+        opacity: $growl-opacity;
+
+        &:after {
+            content: '\00d7';
+            opacity: $growl-close-opacity;
+            font-size: 16px;
+            line-height: 1;
+            width: 16px;
+            height: 16px;
+            background: $growl-close-bg;
+            text-align: center;
+            border-radius: $growl-border-radius;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+        }
+        &:hover {
+            opacity: $growl-opacity-hover;
+
+            &:after {
+                opacity: $growl-close-opacity-hover;
+            }
+        }
+
+        .growl-title {
+            @extend %truncate;
+            font-size: 16px;
+            line-height: 1.25;
+            margin-bottom: 2px;
+        }
+        .growl-message {
+            font-size: 12px;
+            line-height: 1.5;
+            font-weight: 300;
+        }
+
+        &.primary {
+            background-color: $growl-primary-bg;
+            color: $growl-primary-text;
+            border-color: $growl-primary-border;
+        }
+        &.success {
+            background-color: $growl-success-bg;
+            color: $growl-success-text;
+            border-color: $growl-success-border;
+        }
+        &.error {
+            background-color: $growl-error-bg;
+            color: $growl-error-text;
+            border-color: $growl-error-border;
+        }
+        &.warning {
+            background-color: $growl-warning-bg;
+            color: $growl-warning-text;
+            border-color: $growl-warning-border;
+        }
+        &.info {
+            background-color: $growl-info-bg;
+            color: $growl-info-text;
+            border-color: $growl-info-border;
+        }
+    }
+}

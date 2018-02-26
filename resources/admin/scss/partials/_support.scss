@@ -1,0 +1,61 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+.clearfix,
+.cf {
+    @extend %clearfix;
+}
+
+.truncate {
+    @extend %truncate;
+}
+
+.breadcrumb {
+	border-radius: 0;
+}
+
+.rm-p {
+    padding: 0 !important;
+}
+
+.rm-p-top {
+    padding-top: 0;
+}
+
+.rm-p-right {
+    padding-right: 0;
+}
+
+.rm-p-bot {
+    padding-bottom: 0;
+}
+
+.rm-p-left {
+    padding-left: 0;
+}
+
+.rm-m {
+    margin: 0 !important;
+}
+
+.rm-m-top {
+    margin-top: 0;
+}
+
+.rm-m-right {
+    margin-right: 0;
+}
+
+.rm-m-bot {
+    margin-bottom: 0;
+}
+
+.rm-m-left {
+    margin-left: 0;
+}

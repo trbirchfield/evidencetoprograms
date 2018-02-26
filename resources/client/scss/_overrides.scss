@@ -1,0 +1,5 @@
+/* Foundation
+-----------------------------*/
+[class*=column]+[class*=column]:last-child {
+	float: left;
+}

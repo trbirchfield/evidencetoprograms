@@ -1,0 +1,27 @@
+<aside class="question">
+	<h5 class="qa">
+		Readiness Question:
+		<img src="/public/img/tt.png" class="tooltip tt" title="Readiness questions help you estimate how ready your organization is to implement an EBP. <br />As you answer each question, you will be provided with suggested actions to advance your readiness.">
+	</h5>
+	<div class="flowchart">
+		<div class="row">
+			<div class="small-6 columns">
+				<p ng-bind="question.question"></p>
+			</div>
+			<div class="small-5 small-offset-1 columns">
+				<ul class="text-right">
+					<li><a href="#" class="button yes-button" ng-click="doYes($event)">yes</a></li>
+					<li><a href="#" class="button no-button" ng-click="doNo($event)">no</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="text-container" style="display: none;">
+			<ul class="options">
+				<li ng-repeat="text in texts">
+					<div ng-if="text.link">Review <a ng-href="<% text.link %>" title="<% text.text %>"><span ng-bind="text.text"></span></a></div>
+					<div ng-if="!text.link"><span ng-bind="text.text"></span></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</aside>

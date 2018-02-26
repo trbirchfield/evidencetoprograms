@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/**
+ * The admin panel can be rethemed using Bootswatch.
+ * [https://bootswatch.com/]
+ *
+ * INSTALL THEME:
+ * Find and replace all instances on this page
+ * of the current theme [superhero] with the
+ * name of a theme from Bootswatch.
+ */
+
+// Mixins & variables
+@import "mixins";
+@import "variables";
+//@import "bootswatch-flatly-variables";
+
+// Vendor
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../bower_components/bootswatch/flatly/bootswatch";
+@import "../../../bower_components/fontawesome/scss/font-awesome";
+@import "../../../bower_components/angular-loading-bar/build/loading-bar.min.css";
+
+// Partials
+@import "partials/support";
+@import "partials/growl";
+@import "partials/loading-bar";
+@import "partials/forms";
+@import "partials/wrapper";
+@import "partials/sidebar";
+@import "partials/header";
+@import "partials/list";
+@import "partials/sortable";
+
+// Pages
+@import "pages/login";

@@ -1,0 +1,30 @@
+.sidebar-open {
+    overflow: hidden;
+
+    .wrapper {
+        left: $sidebar-width;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        overflow: auto;
+
+        .wrapper {
+            left: 0;
+        }
+    }
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 1600px;
+}
+
+.page-wrapper {
+    margin-left: 0;
+    padding-bottom: 30px;
+
+    @media (min-width: $screen-sm-min) {
+        margin-left: $sidebar-width;
+    }
+}

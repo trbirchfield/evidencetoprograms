@@ -1,0 +1,252 @@
+@include keyframes(loadingRevolve) {
+	0%   { opacity: 1; transform: translate(0,0); }
+	25%  { opacity: 1; transform: translate(0,$loading-revolve-area-size); }
+	50%  { opacity: 1; transform: translate($loading-revolve-area-size,$loading-revolve-area-size); }
+	75%  { opacity: 1; transform: translate($loading-revolve-area-size,0); }
+	100% { opacity: 1; transform: translate(0,0); }
+}
+
+@include keyframes(loadingRotate) {
+	0%    { opacity: 0; transform: scale(0,0); }
+	50%   { opacity: 1; transform: scale(1,1); }
+	100%  { opacity: 0; transform: scale(0,0); }
+}
+
+@include keyframes(loadingCircleBounce) {
+	0%    { opacity: 0; transform: scale(0,0); }
+	50%   { opacity: 1; transform: scale(1,1); }
+	100%  { opacity: 0; transform: scale(0,0); }
+}
+
+@include keyframes(loadingRectangleBounce) {
+	0%   { transform: scale(1,1); }
+	20%  { transform: scale(1,2.5); }
+	100% { transform: scale(1,1); }
+}
+
+@include keyframes(loadingPulse) {
+	0%   { transform: scale(0,0); }
+	20%  { transform: scale(1,1); }
+	100% { transform: scale(0,0); }
+}
+
+.loading {
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	background: url('/public/img/ajax-loader.gif') no-repeat center center;
+
+	&.dark {
+		background-image: url('/public/img/ajax-loader-dark.gif');
+	}
+
+	.cssanimations & {
+		height: auto;
+		width: auto;
+		background: none;
+
+		&.revolve {
+			height: $loading-revolve-area-size;
+			width: $loading-revolve-area-size;
+
+			[class*="ball"] {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: $loading-revolve-ball-size;
+				height: $loading-revolve-ball-size;
+				background-color: $loading-color;
+				border-radius: 100%;
+				display: inline-block;
+				animation: loadingRevolve $loading-revolve-animation-length infinite ease-in-out;
+				animation-fill-mode: both;
+			}
+			&.dark {
+				[class*="ball"] {
+					background-color: $loading-dark-color;
+				}
+			}
+			.ball-1 {
+				animation-delay: 0s;
+			}
+			.ball-2 {
+				animation-delay: -0.5s;
+			}
+			.ball-3 {
+				animation-delay: -1s;
+			}
+			.ball-4 {
+				animation-delay: -1.5s;
+			}
+		}
+
+		&.rotate {
+			height: $loading-rotate-area-size;
+			width: $loading-rotate-area-size;
+
+			[class*="ball"] {
+				position: absolute;
+				width: $loading-rotate-ball-size;
+				height: $loading-rotate-ball-size;
+				background-color: $loading-color;
+				border-radius: 100%;
+				animation: loadingRotate $loading-rotate-animation-length infinite ease-in-out;
+				animation-fill-mode: both;
+			}
+			&.dark {
+				[class*="ball"] {
+					background-color: $loading-dark-color;
+				}
+			}
+			.ball-1 {
+				top: 0;
+				left: 0;
+			}
+			.ball-2 {
+				top: 0;
+				right: 0;
+			}
+			.ball-3 {
+				bottom: 0;
+				right: 0;
+			}
+			.ball-4 {
+				bottom: 0;
+				left: 0;
+			}
+			[class*="rotate-container"] {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+			}
+			.rotate-container-1 {
+
+				.ball-1 {
+					animation-delay: 0s;
+				}
+				.ball-2 {
+					animation-delay: -0.9s;
+				}
+				.ball-3 {
+					animation-delay: -0.6s;
+				}
+				.ball-4 {
+					animation-delay: -0.3s;
+				}
+			}
+			.rotate-container-2 {
+				transform: rotateZ(45deg);
+
+				.ball-1 {
+					animation-delay: -1.1s;
+				}
+				.ball-2 {
+					animation-delay: -0.8s;
+				}
+				.ball-3 {
+					animation-delay: -0.5s;
+				}
+				.ball-4 {
+					animation-delay: -0.2s;
+				}
+			}
+			.rotate-container-3 {
+				transform: rotateZ(90deg);
+
+				.ball-1 {
+					animation-delay: -1.0s;
+				}
+				.ball-2 {
+					animation-delay: -0.7s;
+				}
+				.ball-3 {
+					animation-delay: -0.4s;
+				}
+				.ball-4 {
+					animation-delay: -0.1s;
+				}
+			}
+		}
+
+		&.circle-bounce {
+
+			[class*="ball"] {
+				position: relative;
+				display: inline-block;
+				width: $loading-circle-bounce-ball-size;
+				height: $loading-circle-bounce-ball-size;
+				margin-right: $loading-circle-bounce-ball-margin;
+				background-color: $loading-color;
+				border-radius: 100%;
+				animation: loadingCircleBounce $loading-circle-bounce-animation-length infinite ease-in-out;
+				animation-fill-mode: both;
+			}
+			&.dark {
+				[class*="ball"] {
+					background-color: $loading-dark-color;
+				}
+			}
+			.ball-1 {
+				animation-delay: -0.32s;
+			}
+			.ball-2 {
+				animation-delay: -0.16s;
+			}
+			.ball-3 {
+				animation-delay: 0s;
+			}
+		}
+
+		&.rectangle-bounce {
+
+			[class*="box"] {
+				position: relative;
+				display: inline-block;
+				width: $loading-rectangle-bounce-rectangle-width;
+				height: $loading-rectangle-bounce-rectangle-height;
+				margin-right: $loading-rectangle-bounce-rectangle-margin;
+				background-color: $loading-color;
+				animation: loadingRectangleBounce $loading-rectangle-bounce-animation-length infinite ease-in-out;
+				animation-fill-mode: both;
+			}
+			&.dark {
+				[class*="box"] {
+					background-color: $loading-dark-color;
+				}
+			}
+			.box-2 {
+				animation-delay: -0.7s;
+			}
+			.box-3 {
+				animation-delay: -0.6s;
+			}
+			.box-4 {
+				animation-delay: -0.5s;
+			}
+			.box-5 {
+				animation-delay: -0.4s;
+			}
+		}
+
+		&.pulse {
+
+			[class*="ball"] {
+				position: relative;
+				display: inline-block;
+				width: $loading-pulse-ball-size;
+				height: $loading-pulse-ball-size;
+				background-color: $loading-color;
+				border-radius: 100%;
+				animation: loadingPulse $loading-pulse-animation-length infinite ease-in-out;
+				animation-fill-mode: both;
+			}
+			&.dark {
+				[class*="ball"] {
+					background-color: $loading-dark-color;
+				}
+			}
+		}
+	}
+}

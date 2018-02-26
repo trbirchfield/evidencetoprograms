@@ -1,0 +1,11 @@
+<div class="s-group" ng-class="{'s-collapse': !item.open, 's-locked': !item.sortable}">
+    <div class="s-item" ng-class="{ 's-sortable': item.sortable, 's-lock': !item.sortable, 's-has-children': item.children.length, 's-root-item': item.level == 0 }"  ng-click="(item.children.length) ? item.open = !item.open : ''">
+        <span class="s-item-name" ng-bind="item.name"></span>
+        <span class="s-expand" ng-show="item.children.length"><i class="fa" ng-class="(item.open) ? 'fa-minus' : 'fa-plus'"></i></span>
+    </div>
+    <ul class="s-nested-list" ng-class="{ 's-droppable': !item.root }" ui-sortable="sortableOptions" ng-model="item.children">
+        <li ng-repeat="innerItem in item.children">
+            <nested-sortable item="innerItem" sortable-options="sortableOptions" sortable-open="true"></nested-sortable>
+        </li>
+    </div>
+</div>

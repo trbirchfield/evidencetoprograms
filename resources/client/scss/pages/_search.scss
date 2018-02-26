@@ -1,0 +1,25 @@
+p.search-results-lead {
+    font-weight: $font-weight-bold;
+    color: $color-gray-dark;
+    border-bottom-color: $color-gray;
+    margin-bottom: 10px;
+}
+.search-no-results {
+    margin: 40px 0 120px !important;
+
+    h3 {
+        text-transform: uppercase;
+    }
+}
+.search-result-section-num {
+    color: $color-gray-dark;
+}
+.search-result-title {
+    text-transform: uppercase;
+    border-bottom: solid 5px $color-gray;
+    margin-bottom: 10px;
+}
+.search-highlight {
+    display: inline-block;
+    font-weight: $font-weight-bold;
+}

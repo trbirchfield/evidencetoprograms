@@ -1,0 +1,92 @@
+// Paths
+$img-path: '/public/img/';
+$fonts-path: '/public/fonts/';
+$icon-font-path: $fonts-path;
+
+// Grid
+$grid-float-breakpoint: 2px;
+
+// Colors
+$color-gray: #a9acae !default;
+$color-gray-light: #d3d4d5 !default;
+$color-gray-lighter: #dedede !default;
+$color-gray-lightest: #f4f4f4 !default;
+$color-gray-dark: #58595b !default;
+$color-blue: #003f72 !default;
+$color-blue-light: #3376b3 !default;
+$color-blue-dark: #20619a !default;
+$color-blue-darker: #003f72 !default;
+$color-red: #c82837 !default;
+$color-red-dark: #c82837 !default;
+$color-green: #70b745 !default;
+
+// Bootswatch Flatly Overrides
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%); // #222
+$gray-dark: $color-gray-dark; // #333
+$gray: $color-gray; // #555
+$gray-light: $color-gray-light; // #999
+$gray-lighter: $color-gray-lighter; // #eee
+
+$brand-primary: $color-blue;
+$brand-success: #80b33f !default;
+$brand-info: #a0d3e8 !default;
+$brand-warning: #f08a24 !default;
+$brand-danger: $color-red;
+
+// Body
+$body-bg: $color-gray-lightest;
+
+// Components
+$border-radius-base: 0px;
+
+// Sidebar
+$sidebar-width: 220px;
+$sidebar-color: $color-blue-light;
+$sidebar-bg: $color-blue-darker;
+$sidebar-link-color: #fff;
+$sidebar-link-color-hover: $color-blue-light;
+$sidebar-link-bg: transparent;
+$sidebar-link-bg-hover: darken($sidebar-bg, 5%);
+
+// Breadcrumbs
+$breadcrumb-bg: $color-gray-lighter;
+$breadcrumb-active-color: $color-gray;
+
+// Font-awesome
+$fa-font-path: $fonts-path;
+
+// Angular loading bar & spinner
+$loading-bar-color: $brand-primary;
+$loading-bar-height: 6px;
+$loading-bar-spinner-color: $brand-primary;
+$loading-bar-spinner-diameter: 20px;
+$loading-bar-spinner-border-width: 6px;
+$loading-bar-spinner-border-color: transparent;
+
+// Growl
+$growl-border-radius: 0;
+$growl-border-width: 0;
+$growl-opacity: 0.95;
+$growl-opacity-hover: 1;
+$growl-close-bg: rgba(#000, 0.07);
+$growl-close-opacity: 1;
+$growl-close-opacity-hover: 1;
+$growl-default-bg: $gray-lighter;
+$growl-default-text: #000;
+$growl-default-border: $growl-default-text;
+$growl-primary-bg: $brand-primary;
+$growl-primary-text: #fff;
+$growl-primary-border: $growl-primary-text;
+$growl-success-bg: $brand-success;
+$growl-success-text: #fff;
+$growl-success-border: $growl-success-text;
+$growl-error-bg: $brand-danger;
+$growl-error-text: #fff;
+$growl-error-border: $growl-error-text;
+$growl-warning-bg: $brand-warning;
+$growl-warning-text: #fff;
+$growl-warning-border: $growl-warning-text;
+$growl-info-bg: $brand-info;
+$growl-info-text: #fff;
+$growl-info-border: $growl-info-text;

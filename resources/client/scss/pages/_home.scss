@@ -1,0 +1,98 @@
+.news-alert {
+    h4 {
+        color: #fff;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: $font-weight-bold;
+    }
+    .button {
+        padding: 5px 5px 7px;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: $font-weight-bold;
+        background-color: scale-color($color-green, $lightness: -20%);
+        margin-left: 20px;
+
+        &:hover {
+            background-color: scale-color($color-green, $lightness: -30%);
+        }
+        span {
+            position: relative;
+            color: $color-green;
+            font-size: 20px;
+            top: 2px;
+        }
+    }
+    .close {
+        right: 15px;
+        font-weight: $font-weight-bold;
+    }
+}
+
+#news {
+    background-color: #e6e6e6;
+    padding: 50px 0;
+    border-top: $global-border;
+
+    .news-panel {
+        position: relative;
+        background-color: #fff;
+        padding: 40px 90px;
+
+        h2 {
+            position: relative;
+            border-bottom: none;
+            color: $color-blue;
+
+            &::before {
+                z-index: 0;
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin-top: -3px;
+                height: 6px;
+                border-top: solid 5px $color-gray;
+            }
+            span {
+                z-index: 1;
+                position: relative;
+                display: inline-block;
+                background-color: #fff;
+                padding: 0 40px;
+            }
+        }
+
+        .news-item {
+            * {
+                font-size: 18px !important;
+                line-height: 28px !important;
+            }
+        }
+        .slick-slider {
+            position: static;
+        }
+        .slick-prev,
+        .slick-next {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            padding: 0;
+            margin-bottom: 0;
+            background: $color-green;
+            font-size: 30px;
+            outline: none !important;
+
+            &:hover {
+                background-color: scale-color($color-green, $lightness: -20%)
+            }
+        }
+        .slick-next {
+            left: auto;
+            right: 0;
+        }
+    }
+}

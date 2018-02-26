@@ -1,0 +1,17 @@
+.button,
+button {
+    padding: 10px 20px 15px;
+
+    img.spinner {
+        display: none;
+    }
+    &.button-loading {
+        img.spinner {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px;
+            top: 0;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+default:
+    autoload:
+        '': %paths.base%/tests/acceptance
+    extensions:
+        Laracasts\Behat:
+            env_path: .env.testing
+        Behat\MinkExtension:
+            default_session: laravel
+            laravel: ~
+    suites:
+        client:
+            paths:    [ %paths.base%/tests/acceptance/features/client ]
+            contexts: [ ClientContext ]

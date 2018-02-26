@@ -1,0 +1,1 @@
+if(!Modernizr.svg){var regex=/\.(svg)($|\?)/;$("img.ie-svg").each(function(){var r=$(this).attr("src");$(this).attr("src",r.replace(regex,".png$2"))})}

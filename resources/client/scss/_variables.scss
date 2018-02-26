@@ -1,0 +1,112 @@
+// Paths
+$img-path: '/public/img/';
+$fonts-path: '/public/fonts/';
+
+// Colors
+$color-blue: #003f72;
+$color-green: #70b745;
+$color-green-darker: #539997;
+$color-red: #c82837;
+$color-gray-light: #eee;
+$color-gray: #ddd;
+$color-gray-dark: #999;
+$color-black: #111;
+$color-white: #fff;
+
+// Fonts
+$font-family-sans-serif: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: 'ff-tisa-web-pro', serif;
+$font-family-sans-serif-condensed: 'alternate-gothic-no-1-d', sans-serif;
+$font-family-icon: 'FontAwesome';
+$header-font-family: $font-family-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Base
+$body-bg: $color-white;
+$body-font-color: $color-black;
+$body-font-family: $font-family-serif;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+
+// Grid
+$row-width: rem-calc(1170);
+$column-gutter: rem-calc(30);
+$block-grid-default-spacing: rem-calc(30);
+
+// Utilities
+$global-border: solid 1px $color-gray;
+$global-link-transition: all 0.15s ease-in-out;
+$global-animation-transition: all 0.3s ease-in-out;
+
+// Colors
+$primary-color: $color-blue;
+$secondary-color: #e7e7e7;
+$alert-color: $color-red;
+$success-color: $color-green;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+
+// Buttons
+$button-font-weight: $font-weight-bold;
+
+// Code
+$code-color: #333;
+$code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
+$code-background-color: scale-color($secondary-color, $lightness: 70%);
+$code-border-size: 1px;
+$code-border-style: solid;
+$code-border-color: scale-color($code-background-color, $lightness: -10%);
+$code-padding: rem-calc(2) rem-calc(5) rem-calc(1);
+
+// Loading
+$loading-color: $primary-color;
+$loading-dark-color: #fff;
+$loading-revolve-area-size: 60px;
+$loading-revolve-ball-size: 20px;
+$loading-revolve-animation-length: 2s;
+$loading-rotate-area-size: 60px;
+$loading-rotate-ball-size: 16px;
+$loading-rotate-animation-length: 1.1s;
+$loading-circle-bounce-ball-size: 16px;
+$loading-circle-bounce-ball-margin: 10px;
+$loading-circle-bounce-animation-length: 1.4s;
+$loading-rectangle-bounce-rectangle-height: 20px;
+$loading-rectangle-bounce-rectangle-width: 7px;
+$loading-rectangle-bounce-rectangle-margin: 3px;
+$loading-rectangle-bounce-animation-length: 0.8s;
+$loading-pulse-ball-size: 40px;
+$loading-pulse-animation-length: 0.8s;
+
+// Font-awesome
+$fa-font-path: $fonts-path;
+
+// Slick
+$slick-font-path: $fonts-path;
+
+// Growl
+$growl-border-radius: 0;
+$growl-border-width: 0;
+$growl-opacity: 0.95;
+$growl-opacity-hover: 1;
+$growl-close-bg: transparent;
+$growl-close-opacity: 1;
+$growl-close-opacity-hover: 1;
+$growl-default-bg: $secondary-color;
+$growl-default-text: #000;
+$growl-default-border: $growl-default-text;
+$growl-primary-bg: $primary-color;
+$growl-primary-text: #fff;
+$growl-primary-border: $growl-primary-text;
+$growl-success-bg: $success-color;
+$growl-success-text: #fff;
+$growl-success-border: $growl-success-text;
+$growl-error-bg: $alert-color;
+$growl-error-text: #fff;
+$growl-error-border: $growl-error-text;
+$growl-warning-bg: $warning-color;
+$growl-warning-text: #fff;
+$growl-warning-border: $growl-warning-text;
+$growl-info-bg: $info-color;
+$growl-info-text: #fff;
+$growl-info-border: $growl-info-text;

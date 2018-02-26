@@ -1,0 +1,68 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+.clearfix,
+.cf {
+    @extend %clearfix;
+}
+
+.truncate {
+    @extend %truncate;
+}
+
+// Remove Margins
+.rm-m {
+    margin: 0 !important;
+}
+.rm-m-top {
+    margin-top: 0 !important;
+}
+.rm-m-rt {
+    margin-right: 0 !important;
+}
+.rm-m-bot {
+    margin-bottom: 0 !important;
+}
+.rm-m-lt {
+    margin-left: 0 !important;
+}
+
+// Remove Padding
+.rm-p {
+    padding: 0 !important;
+}
+.rm-p-top {
+    padding-top: 0 !important;
+}
+.rm-p-rt {
+    padding-right: 0 !important;
+}
+.rm-p-bot {
+    padding-bottom: 0 !important;
+}
+.rm-p-lt {
+    padding-left: 0 !important;
+}
+
+// Remove Borders
+.rm-b {
+    border: none !important;
+}
+.rm-b-top {
+    border-top: none !important;
+}
+.rm-b-rt {
+    border-right: none !important;
+}
+.rm-b-bot {
+    border-bottom: none !important;
+}
+.rm-b-lt {
+    border-left: none !important;
+}

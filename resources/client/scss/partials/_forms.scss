@@ -1,0 +1,27 @@
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=email],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=color],
+input[type=number],
+input[type=search],
+textarea {
+	transition: none;
+    border: $global-border;
+    background-color: #fff;
+    height: 52px !important;
+    padding: 0 0 0 10px;
+}
+textarea {
+    display: block;
+    height: auto !important;
+    padding: 10px 10px !important;
+    min-height: 300px;
+}

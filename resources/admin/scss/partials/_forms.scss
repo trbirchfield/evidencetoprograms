@@ -1,0 +1,100 @@
+// Error handling on invalid form controls
+form.ng-submitted .form-control.ng-invalid,
+.form-control.ng-invalid.ng-touched {
+    &,
+    + .cke {
+        border-color: $brand-danger !important;
+    }
+    &:focus {
+        border-color: darken($brand-danger, 10%);
+    }
+    + .cke + .help-block,
+    + .help-block {
+        color: $brand-danger;
+    }
+}
+
+input,
+select,
+textarea {
+    border-radius: 0 !important;
+    border-width: 1px !important;
+}
+
+select {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+) !important;
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    padding-right: 25px;
+    -webkit-appearance: none;
+}
+
+.cke_chrome {
+    box-shadow: none !important;
+    border-color: #ccc !important;
+
+    .cke_top {
+        border-bottom-color: #ccc !important;
+    }
+}
+
+// Toggle
+input[type=checkbox].toggle,
+input[type=radio].toggle {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 9px !important;
+    background-color: #eee;
+    padding: 1px;
+    display: inline-block;
+    width: 42px;
+    height: 26px;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    margin: 0px;
+    transform: scale(1);
+    top: 8px;
+
+    &:checked {
+        background-color: #53d76a;
+
+        &:after {
+            left: 17px;
+        }
+
+        &[disabled] {
+            background-color: #eee;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 1px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #fff;
+        transition: all .2s;
+    }
+
+    &.small {
+        border-radius: 9px !important;
+        width: 32px;
+        height: 18px;
+        top: 5px;
+
+        &:checked {
+            &:after {
+                left: 15px;
+            }
+        }
+
+        &:after {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

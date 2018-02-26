@@ -1,0 +1,239 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Can we identify an important health issue of our audience?",
+            "yes": {
+                "action": "loadQuestion",
+                "params": [
+                    2
+                ]
+            },
+            "no": {
+                "action": "loadText",
+                "params": [
+                    {
+                        "text": "Match With Clientele",
+                        "link": "/section/2/7"
+                    },
+                    {
+                        "text": "Identifying an Important Health Issue",
+                        "link": "/section/2/1"
+                    },
+                    {
+                        "text": "Prioritizing Needs",
+                        "link": "/section/2/2"
+                    },
+                    {
+                        "text": "Consider broadening the range of individuals you serve or the geographic area you serve in order to build your audience.",
+                        "link": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "question": "Can we identify which programs are evidence-based?",
+            "yes": {
+                "action": "loadQuestion",
+                "params": [
+                    3
+                ]
+            },
+            "no": {
+                "action": "loadText",
+                "params": [
+                    {
+                        "text": "What Does it Mean for a Program to be Evidence-Based?",
+                        "link": "/section/1/0"
+                    },
+                    {
+                        "text": "Identifying Evidence-Based Programs",
+                        "link": "/section/2/3"
+                    },
+                    {
+                        "text": "Visit the websites of the registries and databases provided as examples. Study the criteria these registries and databases use to certify EBPs.",
+                        "link": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "question": "Does organizational leadership and staff support the program?",
+            "yes": {
+                "action": "loadQuestion",
+                "params": [
+                    4
+                ]
+            },
+            "no": {
+                "action": "loadText",
+                "params": [
+                    {
+                        "text": "Support from Organizational Stakeholders and Presence of Program Champions",
+                        "link": "/section/2/4"
+                    },
+                    {
+                        "text": "Present to your organization's leaders and/or staff the positive outcomes identified in the evaluation studies conducted on the EBP you would like to implement.",
+                        "link": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "question": "Do we have a program champion?",
+            "yes": {
+                "action": "loadQuestion",
+                "params": [
+                    5
+                ]
+            },
+            "no": {
+                "action": "loadText",
+                "params": [
+                    {
+                        "text": "Support from Organizational Stakeholders and Presence of Program Champions",
+                        "link": "/section/2/4"
+                    },
+                    {
+                        "text": "Identify an individual (staff member or volunteer) who strongly believes in the program you would like to implement. Invite him or her to join you in advocating for the program.",
+                        "link": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "question": "Do we have the personnel to implement the program?",
+            "yes": {
+                "action": "loadQuestion",
+                "params": [
+                    6
+                ]
+            },
+            "no": {
+                "action": "loadText",
+                "params": [
+                    {
+                        "text": "Match With Organizational Resources",
+                        "link": "/section/2/6"
+                    },
+                    {
+                        "text": "Establishing Partnerships",
+                        "link": "/section/2/8"
+                    },
+                    {
+                        "text": "Identify organizations that have the personnel needed for the program and approach these organizations about partnership formation.",
+                        "link": false
+                    },
+                    {
+                        "text": "Recruit volunteers with the skills or credentials needed to implement the program.",
+                        "link": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "question": "Do we have the facilities and equipment to implement the program?",
+            "yes": {
+                "action": "loadQuestion",
+                "params": [
+                    7
+                ]
+            },
+            "no": {
+                "action": "loadText",
+                "params": [
+                    {
+                        "text": "Match With Organizational Resources",
+                        "link": "/section/2/6"
+                    },
+                    {
+                        "text": "Establishing Partnerships",
+                        "link": "/section/2/8"
+                    },
+                    {
+                        "text": "Identify organizations that have the resources needed for the program and approach these organizations about partnership formation.",
+                        "link": false
+                    },
+                    {
+                        "text": "Obtaining Funding",
+                        "link": "/section/2/9"
+                    },
+                    {
+                        "text": "Seek additional funding from the sources listed as examples.",
+                        "link": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "question": "Do we have the funding to implement the program?",
+            "yes": {
+                "action": "loadQuestion",
+                "params": [
+                    8
+                ]
+            },
+            "no": {
+                "action": "loadText",
+                "params": [
+                    {
+                        "text": "Obtaining Funding",
+                        "link": "/section/2/9"
+                    },
+                    {
+                        "text": "Seek additional funding from the sources listed as examples.",
+                        "link": false
+                    },
+                    {
+                        "text": "Establishing Partnerships",
+                        "link": "/section/2/8"
+                    },
+                    {
+                        "text": "Identify organizations that you could partner with in order to decrease your funding needs. Approach these organizations about partnership formation.",
+                        "link": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "question": "Are we willing to implement the EBP as designed?",
+            "yes": {
+                "action": "loadText",
+                "params": [
+                    {
+                        "text": "Congratulations! The conditions in your organization are favorable for the successful implementation of an EBP.",
+                        "link": false
+                    }
+                ]
+            },
+            "no": {
+                "action": "loadText",
+                "params": [
+                    {
+                        "text": "What Does it Mean for a Program to be Evidence-Based?",
+                        "link": "/section/1/0"
+                    },
+                    {
+                        "text": "Implementing Evidence-Based Programs with Fidelity",
+                        "link": "/section/4/0"
+                    },
+                    {
+                        "text": "Adapting Programs to Local Needs and Preferences while Maintaining Fidelity",
+                        "link": "/section/4/2"
+                    },
+                    {
+                        "text": "If you believe you will need to adapt a program, contact the developers to see if they will help you modify it.",
+                        "link": false
+                    }
+                ]
+            }
+        }
+    ]
+}

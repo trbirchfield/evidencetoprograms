@@ -1,0 +1,93 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -$sidebar-width;
+    width: $sidebar-width;
+    color: $sidebar-color;
+    background-color: $sidebar-bg;
+    overflow-y: auto;
+    z-index: 1100;
+    @media (min-width: $screen-sm-min) {
+        left: 0;
+    }
+    a {
+        color: $sidebar-link-color;
+        &:hover {
+            color: $sidebar-link-color-hover;
+        }
+    }
+}
+
+.nav-sidebar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1;
+    > li {
+        &.active {
+            > a {
+                color: $color-green;
+            }
+        }
+        a {
+            @extend %truncate;
+            display: block;
+            padding: 15px;
+            background-color: $sidebar-link-bg;
+            text-decoration: none;
+            &:hover {
+                background-color: $sidebar-link-bg-hover;
+            }
+        }
+        &.treeview {
+            > a {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    margin-top: -7px;
+                    content: " \25BE";
+                    color: darken($sidebar-color, 40%);
+                }
+            }
+            > ul {
+                display: none;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li {
+                    a {
+                        &:hover {
+                            color: $color-blue-light;
+                        }
+                        &:before {
+                            content: "\00BB";
+                            margin-right: 8px;
+                            color: darken($sidebar-color, 40%);
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: $color-green;
+                        }
+                    }
+                }
+            }
+            &.active {
+                background-color: $sidebar-link-bg-hover;
+                > a {
+                    color: $sidebar-color;
+                    &:after {
+                        transform: rotate(180deg);
+                    }
+                }
+                > ul {
+                    display: block;
+                }
+            }
+        }
+    }
+}
